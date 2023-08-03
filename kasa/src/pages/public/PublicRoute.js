@@ -1,15 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Layout from '@/pages/public/Layout';
-import Acceuil from '@/pages/public/Acceuil';
-import Logement from '@/pages/public/Logement';
-import Propos from '@/pages/public/Propos';
+import { Layout, Acceuil, Logement, Propos } from '@pages/public';
 import Error from '@/_utils/public/Error';
 
 
 
 
-const PublicRoute = () => {
+const PublicRouter = () => {
     return (
         <Routes>
             <Route element={<Layout/>}>
@@ -27,4 +24,4 @@ const PublicRoute = () => {
     );
 };
 
-export default PublicRoute;
+export default PublicRouter;
